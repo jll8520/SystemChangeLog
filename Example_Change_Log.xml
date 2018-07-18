@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change_log>
+	<change id="18906">
+		<date_time timezone="GMT+00" timeformat="24">2018-07-12 16:04</date_time>
+		<title>Installed Android Studio</title>
+		<procedures>
+			<procedure id="12345" parent_id="null">
+				<goto_webpage>https://developer.android.com/studio/</goto_webpage>
+				<download_file>android-studio-ide-173.4819257-linux.zip</download_file>
+				<procedure id="23456" parent_id="12345">
+					<title>Installed Dependencies</title>
+					<command_line>sudo apt-get install libc6:i386</command_line>
+				</procedure>
+				<command_line>unzip android-studio-linux.zip -d /opt</command_line>
+				<command_line>./opt/android-studio/bin/studio.sh</command_line>
+			</procedure>
+		</procedures>
+	</change>
+</change_log>
